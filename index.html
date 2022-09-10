@@ -1,38 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="UTF-8">
-    <title>ДЗ_1</title>
+	<meta charset="UTF-8">
+	<title>ДЗ_1</title>
 </head>
 <body>
-<h1 id="link" align="center">homework</h1>
+<h1 align="center" id="link">homework</h1>
 <ol>
-    <li>
-        <a href="http://example.com">example.com</a>
-    </li>
-    <li>
-        <a href="https://example.com">example.com</a>
-    </li>
-    <li>
-        <a href="ftp://user:pass@ftp.example.com">ftp link</a>
-    </li>
-    <li>
-        <a href="ftp://ftp.example.com/file.bin">ftp link</a>
-    </li>
-    <li>
-        <a href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0#:~:text=%D0%94%D0%BE%D0%B1%D1%80%D0%BE%20%D0%BF%D0%BE%D0%B6%D0%B0%D0%BB%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%B2,%D1%80%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C%20%D0%BA%D0%B0%D0%B6%D0%B4%D1%8B%D0%B9.">wikipedia</a>
-    </li>
-    <li>
-        <a href="#link">link</a>
-    </li>
-    <li>
-        <a title="link to example.com" href="https://example.com.com">example.com</a>
-    </li>
-    <li>
-
-    </li>
-
+	
+	<li><a href="http://example.com">example.com</a></li>
+	
+	<li><a href="https://example.com">example.com</a></li>
+	
+	<li><a href="ftp://user:pass@ftp.example.com">ftp link</a></li>
+	
+	<li><a href="ftp://ftp.example.com/file.bin">ftp link</a></li>
+	
+	<li><a href="https://en.wikipedia.org/wiki/Main_Page#On_this_day">wikipedia</a></li>
+	
+	<li><a href="#link">link</a></li>
+	
+	<li><a href="https://example.com?parametr1=p1&parametr2=p2">example.com</a></li>
+	
+	<li>
+		<nav class="menu">
+			<ul>
+				<li><a href="#" title="main">Главная</a></li>
+				<li><a href="#" title="about us">О нас</a></li>
+				<li><a href="#" title="contacts">Контакты</a></li>
+			</ul>
+		</nav>
+	</li>
+	
+	<li><a>link</a></li>
+	
+	<li><a href="">link</a></li>
+	
+	<li><a href="https://example.com" rel="nofollow">nofollow link</a></li>
+	
+	<li><a href="https://example.com">
+		<noindex>noindex</noindex>
+	</a></li>
+	
+	<li>
+		<p>text <a href="#"> contest link</a> text</p>
+	</li>
+	<li>
+		<p>
+			<a href="somefile.html"><img alt="image" src="images.img"></a>
+		</p>
+	</li>
+	
+	<li>
+		<p><img alt="Карта изображений" height="200" src="photo_2021-12-28_23-54-58.jpg" usemap="#map" width="350"></p>
+		<p>
+			<map name="map">
+				<area alt="прямоугольная область" coords="10,115,30,140" href="/" shape="rect">
+				<area alt="круглая область" coords="60,175,10" href="/" shape="poly">
+			</map>
+		</p>
+	</li>
+	<li><a href="/somefile.html">link</a></li>
+	<li><a href="/about/somefile.html">link</a></li>
+	<li><a href="../somefile.html">link</a></li>
+	<li><a href="../../somefile.html">link</a></li>
+	<li><a href="/>link</a></li>
+    <li><a href=" somefile.html">link</a></li>
 </ol>
+
+<form action="/" method="POST">
+	<label>
+		Имя:
+		<input name="field-name"
+		       placeholder="Введите ваше имя"/>
+	</label><br>
+	
+	<label>
+		email:
+		<input name="field-email"
+		       placeholder="Введите вашу почту"
+		       type="email"/>
+	</label><br>
+	
+	<label>
+		дата рождения:
+		<input name="field-date"
+		       type="date"/>
+	</label><br/>
+	<label>
+		пол:
+		<input checked="checked" name="gender"
+		       type="radio"/>
+		мужской</label>
+	<label>
+		<input name="gender"
+		       type="radio"/>
+		женский</label><br>
+	
+	<label>
+		количество конечностей:
+		<input checked="checked" name="limbs" type="radio"/>4</label>
+	<label>
+		<input name="limbs" type="radio"/>3</label>
+	<label>
+		<input name="limbs" type="radio"/>2</label>
+	<label>
+		<input name="limbs" type="radio"/>1</label><br/>
+	<label>Сверхспособности:<select multiple="multiple" name="superpowers">
+		<option>бессмертие</option>
+		<option>прохождение сквозь стены</option>
+		<option>левитация</option>
+	</select>
+	</label><br>
+	
+	<label>Биография:
+		<textarea name="bio" placeholder="Расскажите о себе"></textarea>
+	</label><br>
+	
+	<label>С контрактом ознакомлен(а)
+		<input name="contract" type="checkbox">
+	</label> <br>
+	
+	<input name="Отправить" type="submit">
+</form>
 </body>
 </html>
 
