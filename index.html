@@ -8,19 +8,19 @@
 <h1 id="link">homework</h1>
 <ol>
 	
-	<li><a href="http://example.com">example.com</a></li>
+	<li><a href="http://example.com">Абсолютная гиперссылка</a></li>
 	
-	<li><a href="https://example.com">example.com</a></li>
+	<li><a href="https://example.com">Абсолютная гиперссылка в протоколе https</a></li>
 	
-	<li><a href="ftp://user:pass@ftp.example.com">ftp link</a></li>
+	<li><a href="ftp://ftp.example.com/files.file.html">Ссылка на файл на сервере FTP без авторизации</a></li>
 	
-	<li><a href="ftp://ftp.example.com/file.bin">ftp link</a></li>
+	<li><a href="ftp://user:pass@ftp.example.com/files.file.html">Ссылка на файл на сервере FTP с авторизацией</a></li>
 	
-	<li><a href="https://en.wikipedia.org/wiki/Main_Page#On_this_day">wikipedia</a></li>
+	<li><a href="https://en.wikipedia.org/wiki/Main_Page#On_this_day">Ссылка на фрагмент страницы некоторого сайта</a></li>
 	
-	<li><a href="#link">link</a></li>
+	<li><a href="#link">Ссылка на фрагмент текущей страницы</a></li>
 	
-	<li><a href="https://example.com?parametr1=p1&parametr2=p2">example.com</a></li>
+	<li><a href="https://example.com?parametr1=p1&parametr2=p2">Ссылка с двумя параметрами в URL</a></li>
 	
 	<li>
 		<nav class="menu">
@@ -32,14 +32,14 @@
 		</nav>
 	</li>
 	
-	<li><a>link</a></li>
+	<li><a>Ссылка без href</a></li>
 	
-	<li><a href="">link</a></li>
+	<li><a href="">Ссылка с пустым href</a></li>
 	
-	<li><a href="https://example.com" rel="nofollow">nofollow link</a></li>
+	<li><a href="https://example.com" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
 	
 	<li><a href="https://example.com">
-		<noindex>noindex</noindex>
+		<noindex>Ссылка, запрещенная для индексации поисковиками</noindex>
 	</a></li>
 	
 	<li>
@@ -47,7 +47,7 @@
 	</li>
 	<li>
 		<p>
-			<a href="somefile.html"><img alt="image" src="images.img"></a>
+			<a href="#"><img alt="Ссылка-изображение" src="images.img"></a>
 		</p>
 	</li>
 	
@@ -56,16 +56,16 @@
 		<p>
 			<map name="map">
 				<area alt="прямоугольная область" coords="10,115,30,140" href="/" shape="rect">
-				<area alt="круглая область" coords="60,175,10" href="/" shape="rect">
+				<area alt="круглая область" coords="60,175,10" href="/" shape="circle">
 			</map>
 		</p>
 	</li>
-	<li><a href="/somefile.html">link</a></li>
-	<li><a href="/about/somefile.html">link</a></li>
-	<li><a href="../somefile.html">link</a></li>
-	<li><a href="../../somefile.html">link</a></li>
-	<li><a href="/>link</a></li>
-    <li><a href="somefile">link</a></li>
+	<li><a href="/somefile">Относительная ссылка на страницу в текущем каталоге</a></li>
+	<li><a href="/about/somefile">Относительная ссылка на страницу в каталоге about</a></li>
+	<li><a href="../somefile">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+	<li><a href="../../somefile">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
+	<li><a href="/">Сокращенная ссылка на главную</a></li>
+    <li><a href="/files/somefile">Сокращенная ссылка на внутреннюю</a></li>
 </ol>
 
 <form action="/" method="POST">
@@ -122,6 +122,7 @@
 	</label> <br>
 	
 	<input name="Отправить" type="submit">
+	<p>hello world</p>
 </form>
 </body>
 </html>
