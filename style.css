@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: "Times New Roman", "Felix Titling", serif;
+}
+
+#logo {
+    background-color: #282828;
+}
+#spreadsheet{
+    align: center;
+    background-color: blanchedalmond;
+    border: 1px;
+}
+#site_name {
+    color: #513c93;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+{
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+.test {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#main {
+    display: inline-block;
+    text-align: center;
+    max-width: 960px;
+}
+
+#footer {
+    background-color: #134286;
+    color: white;
+}

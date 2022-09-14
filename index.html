@@ -3,126 +3,161 @@
 <head>
 	<meta charset="UTF-8">
 	<title>ДЗ_1</title>
+	<link href="style.css" rel="stylesheet">
 </head>
 <body>
-<p id="link">Олефиренко Захар 22.2</p>
-<ol>
-	
-	<li><a href="http://example.com">Абсолютная гиперссылка</a></li>
-	
-	<li><a href="https://example.com">Абсолютная гиперссылка в протоколе https</a></li>
-	
-	<li><a href="ftp://ftp.example.com/files/file.html">Ссылка на файл на сервере FTP без авторизации</a></li>
-	
-	<li><a href="ftp://user:pass@ftp.example.com/files/file.html">Ссылка на файл на сервере FTP с авторизацией</a></li>
-	
-	<li><a href="https://en.wikipedia.org/wiki/Main_Page#On_this_day">Ссылка на фрагмент страницы некоторого сайта</a></li>
-	
-	<li><a href="#link">Ссылка на фрагмент текущей страницы</a></li>
-	
-	<li><a href="https://example.com?parametr1=p1&parametr2=p2">Ссылка с двумя параметрами в URL</a></li>
-	
-	<li>
-		<nav class="menu">
-			<ul>
-				<li><a href="#" title="main">Главная</a></li>
-				<li><a href="#" title="about us">О нас</a></li>
-				<li><a href="#" title="contacts">Контакты</a></li>
+<div class="test">
+	<header>
+		<div id="logo">
+			<img src="Adidas-original.png">
+			<h1 id="site_name">Mywebsite</h1>
+		</div>
+	</header>
+	<div id="main">
+		<nav class="nav">
+			<ul class="nav_links">
+				<li><a href="#hyperlinks">Список ссылок</a></li>
+				<li><a href="#spreadsheet">Таблица</a></li>
+				<li><a href="#form">Форма</a></li>
 			</ul>
 		</nav>
-	</li>
-	
-	<li><a>Ссылка без href</a></li>
-	
-	<li><a href="">Ссылка с пустым href</a></li>
-	
-	<li><a href="https://example.com" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
-	
-	<li><a href="https://example.com" rel="nofollow">
-		<!--noindex-->Ссылка, запрещенная для индексации поисковиками<!--/noindex-->
-	</a></li>
-	
-	<li>
-		<p>text <a href="/">контекстная ссылка</a> text</p>
-	</li>
-	<li>
-		<p>
-			<a href="#"><img alt="Ссылка-изображение" src="images.img"></a>
-		</p>
-	</li>
-	
-	<li>
-		<p><img alt="Карта изображений" height="200" src="photo_2021-12-28_23-54-58.jpg" usemap="#map" width="350"></p>
-		<p>
-			<map name="map">
-				<area alt="прямоугольная область" coords="10,115,30,140" href="/" shape="rect">
-				<area alt="круглая область" coords="60,175,10" href="/" shape="circle">
-			</map>
-		</p>
-	</li>
-	<li><a href="/somefile">Относительная ссылка на страницу в текущем каталоге</a></li>
-	<li><a href="/about/somefile">Относительная ссылка на страницу в каталоге about</a></li>
-	<li><a href="../somefile">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
-	<li><a href="../../somefile">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
-	<li><a href="/">Сокращенная ссылка на главную</a></li>
-    <li><a href="/files/somefile">Сокращенная ссылка на внутреннюю</a></li>
-</ol>
-
-<form action="/" method="POST">
-	<label>
-		Имя:
-		<input name="field-name"
-		       placeholder="Введите ваше имя"/>
-	</label><br>
-	
-	<label>
-		email:
-		<input name="field-email"
-		       placeholder="Введите вашу почту"
-		       type="email"/>
-	</label><br>
-	
-	<label>
-		дата рождения:
-		<input name="field-date"
-		       type="date"/>
-	</label><br/>
-	<label>
-		пол:
-		<input checked="checked" name="gender"
-		       type="radio"/>
-		мужской</label>
-	<label>
-		<input name="gender"
-		       type="radio"/>
-		женский</label><br>
-	
-	<label>
-		количество конечностей:
-		<input checked="checked" name="limbs" type="radio"/>4</label>
-	<label>
-		<input name="limbs" type="radio"/>3</label>
-	<label>
-		<input name="limbs" type="radio"/>2</label>
-	<label>
-		<input name="limbs" type="radio"/>1</label><br/>
-	<label>Сверхспособности:<select multiple="multiple" name="superpowers">
-		<option>бессмертие</option>
-		<option>прохождение сквозь стены</option>
-		<option>левитация</option>
-	</select>
-	</label><br>
-	
-	<label>Биография:
-		<textarea name="bio" placeholder="Расскажите о себе"></textarea>
-	</label><br>
-	
-	<label>С контрактом ознакомлен(а)
-		<input name="contract" type="checkbox">
-	</label> <br>
-	
-	<input name="Отправить" type="submit">
-</form>
+		<div class="hyperlinks">
+			<ol>
+				<li><a href="http://example.com">Абсолютная гиперссылка</a></li>
+				
+				<li><a href="https://example.com">Абсолютная гиперссылка в протоколе https</a></li>
+				
+				<li><a href="ftp://ftp.example.com/files/file.html">Ссылка на файл на сервере FTP без авторизации</a>
+				</li>
+				
+				<li><a href="ftp://user:pass@ftp.example.com/files/file.html">Ссылка на файл на сервере FTP с
+				                                                              авторизацией</a></li>
+				
+				<li><a href="https://en.wikipedia.org/wiki/Main_Page#On_this_day">Ссылка на фрагмент страницы некоторого
+				                                                                  сайта</a></li>
+				
+				<li><a href="#link">Ссылка на фрагмент текущей страницы</a></li>
+				
+				<li><a href="https://example.com?parametr1=p1&parametr2=p2">Ссылка с двумя параметрами в URL</a></li>
+				
+				<li>
+					<nav>
+						<ul>
+							<li><a href="#" title="main">Главная</a></li>
+							<li><a href="#" title="about us">О нас</a></li>
+							<li><a href="#" title="contacts">Контакты</a></li>
+						</ul>
+					</nav>
+				</li>
+				
+				<li><a>Ссылка без href</a></li>
+				
+				<li><a href="">Ссылка с пустым href</a></li>
+				
+				<li><a href="https://example.com" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a>
+				</li>
+				
+				<li><a href="https://example.com" rel="nofollow">
+					<!--noindex-->Ссылка, запрещенная для индексации поисковиками<!--/noindex-->
+				</a></li>
+				
+				<li>
+					<p>текст <a href="/">контекстная ссылка</a> текст</p>
+				</li>
+				<li>
+					<p>
+						<a href="#"><img alt="Ссылка-изображение" src="images.img"></a>
+					</p>
+				</li>
+				
+				<li>
+					<img alt="Карта изображений" height="200" src="" usemap="#map" width="350">
+					<map name="map">
+						<area alt="прямоугольная область" coords="10,10,30,40" href="/" shape="rect">
+						<area alt="круглая область" coords="50,125,10" href="/" shape="circle">
+					</map>
+				</li>
+				<li><a href="/somefile">Относительная ссылка на страницу в текущем каталоге</a></li>
+				<li><a href="/about/somefile">Относительная ссылка на страницу в каталоге about</a></li>
+				<li><a href="../somefile">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+				<li><a href="../../somefile">Относительная ссылка на страницу в каталоге двумя уровнями выше
+				                             текущего</a></li>
+				<li><a href="/">Сокращенная ссылка на главную</a></li>
+				<li><a href="/files/somefile">Сокращенная ссылка на внутреннюю</a></li>
+			</ol>
+		</div>
+		<div id="spreadsheet">
+			<table>
+				<tr>
+					11
+					<td>
+						12
+					</td>
+					<td>
+						13
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div id="form">
+			<form action="/" method="POST">
+				<label>
+					Имя:
+					<input name="field-name" placeholder="Введите ваше имя"/></label><br>
+				<label>
+					email:
+					<input name="field-email"
+					       placeholder="Введите вашу почту"
+					       type="email"/>
+				</label><br>
+				
+				<label>
+					дата рождения:
+					<input name="field-date"
+					       type="date"/>
+				</label><br/>
+				<label>
+					пол:
+					<input checked="checked" name="gender"
+					       type="radio"/>
+					мужской</label>
+				<label>
+					<input name="gender"
+					       type="radio"/>
+					женский</label><br>
+				
+				<label>
+					количество конечностей:
+					<input checked="checked" name="limbs" type="radio"/>4</label>
+				<label>
+					<input name="limbs" type="radio"/>3</label>
+				<label>
+					<input name="limbs" type="radio"/>2</label>
+				<label>
+					<input name="limbs" type="radio"/>1</label><br/>
+				<label>Сверхспособности:<select multiple="multiple" name="[бессмертие, неосязаемость, левитация]">
+					<option>бессмертие</option>
+					<option>прохождение сквозь стены</option>
+					<option>левитация</option>
+				</select>
+				</label><br>
+				
+				<label>Биография:
+					<textarea name="bio" placeholder="Расскажите о себе"></textarea>
+				</label><br>
+				
+				<label>С контрактом ознакомлен(а)
+					<input name="contract" type="checkbox">
+				</label> <br>
+				
+				<input name="Отправить" type="submit">
+			</form>
+		</div>
+	</div>
+</div>
+<footer id="footer">
+	(с)Олефиренко Захар 2022
+</footer>
 </body>
 </html>
 
