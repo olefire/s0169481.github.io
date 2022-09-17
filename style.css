@@ -10,7 +10,7 @@ body {
 }
 
 #logo {
-    background-color: #110303;
+    background-color: black;
 }
 
 #site_name {
@@ -32,7 +32,7 @@ body {
     background-color: black;
 }
 
-#nav_list {
+.nav_list {
     color: white;
     font-weight: bold;
 }
