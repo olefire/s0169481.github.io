@@ -14,7 +14,7 @@ body {
 }
 
 #logo {
-    background-color: #110303;
+    background-color: black;
 }
 
 #site_name {
@@ -41,9 +41,8 @@ body {
 }
 
 .list:hover {
-    transition-duration: 150ms;
-    font-size: 25px;
-    text-decoration-color: #efefef;
+    transition-duration: 250ms;
+    background-color: #1d1150;
 }
 
 .nav a {
