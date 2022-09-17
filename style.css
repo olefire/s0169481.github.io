@@ -122,7 +122,15 @@ li {
 
 .form:focus {
     background-color: azure;
-    box-shadow: 0 0 10px blue;
+    box-shadow: 0 0 5px blue;
+}
+
+input[type=submit] {
+    padding:5px 15px;
+    background:#ccc;
+    border:0 none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 select, textarea{
