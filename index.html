@@ -9,18 +9,22 @@
 <div class="test">
 	<header>
 		<div id="logo">
-			<img src="Adidas-original.png">
+			<a href="/"><img src="logo_negate.png" width="5%"></a>
 			<h1 id="site_name">Mywebsite</h1>
 		</div>
 	</header>
 	<div id="main">
 		<nav class="nav">
 			<ul class="nav_links">
-				<li><a href="#hyperlinks">Список ссылок</a></li>
-				<li><a href="#spreadsheet">Таблица</a></li>
-				<li><a href="#form">Форма</a></li>
+				<div class="links">
+					<li class="list"><a href="#hyperlinks"><span id="nav_list">Список ссылок</span></a></li>
+					<li class="list"><a href="#spreadsheet"><span id="nav_list">Таблица</span></a></li>
+					<li class="list"><a href="#form"><span id="nav_list">Форма</span></a></li>
+				</div>
 			</ul>
 		</nav>
+		<hr>
+		<!--ссылки-->
 		<div class="hyperlinks">
 			<ol>
 				<li><a href="http://example.com">Абсолютная гиперссылка</a></li>
@@ -42,7 +46,7 @@
 				
 				<li>
 					<nav>
-						<ul>
+						<ul class="task_nav">
 							<li><a href="#" title="main">Главная</a></li>
 							<li><a href="#" title="about us">О нас</a></li>
 							<li><a href="#" title="contacts">Контакты</a></li>
@@ -71,10 +75,10 @@
 				</li>
 				
 				<li>
-					<img alt="Карта изображений" height="200" src="" usemap="#map" width="350">
+					<img alt="Карта изображений" height="200" src="photo_2022-09-16_22-46-49.jpg" usemap="#map" width="225">
 					<map name="map">
-						<area alt="прямоугольная область" coords="10,10,30,40" href="/" shape="rect">
-						<area alt="круглая область" coords="50,125,10" href="/" shape="circle">
+						<area alt="прямоугольная область" coords="0,0,50,50" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" shape="rect">
+						<area alt="круглая область" coords="150,125,30" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" shape="circle">
 					</map>
 				</li>
 				<li><a href="/somefile">Относительная ссылка на страницу в текущем каталоге</a></li>
@@ -86,77 +90,101 @@
 				<li><a href="/files/somefile">Сокращенная ссылка на внутреннюю</a></li>
 			</ol>
 		</div>
+		
+		<!--таблица-->
 		<div id="spreadsheet">
-			<table>
+			<table class="table">
+				<thead>
 				<tr>
-					11
-					<td>
-						12
-					</td>
-					<td>
-						13
-					</td>
+					<th>1st col</th>
+					<th>2nd col</th>
+					<th>3th col</th>
+					<th>4th col</th>
 				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td class="odd">ewf</td>
+					<td class="even">wef</td>
+					<td class="odd">few</td>
+					<td class="even">dswe</td>
+				</tr>
+				<tr>
+					<td class="even" colspan="2">fewe</td>
+					<td class="odd">123</td>
+					<td class="even">01/09</td>
+				</tr>
+				<tr>
+					<td class="odd" colspan="4">122</td>
+				</tr>
+				<tr>
+					<td class="even">12</td>
+					<td class="odd">21</td>
+					<td class="even" colspan="2">421</td>
+				</tr>
+				</tbody>
 			</table>
 		</div>
+		
+		<!--форма-->
 		<div id="form">
 			<form action="/" method="POST">
 				<label>
 					Имя:
-					<input name="field-name" placeholder="Введите ваше имя"/></label><br>
+					<input class="form" name="field-name" placeholder="Введите ваше имя"/></label><br>
 				<label>
 					email:
-					<input name="field-email"
+					<input class="form" name="field-email"
 					       placeholder="Введите вашу почту"
 					       type="email"/>
 				</label><br>
 				
 				<label>
 					дата рождения:
-					<input name="field-date"
+					<input class="form" name="field-date"
 					       type="date"/>
 				</label><br/>
 				<label>
 					пол:
-					<input checked="checked" name="gender"
+					<input checked="checked" class="form" name="gender"
 					       type="radio"/>
 					мужской</label>
 				<label>
-					<input name="gender"
+					<input class="form" input name="gender"
 					       type="radio"/>
 					женский</label><br>
 				
 				<label>
 					количество конечностей:
-					<input checked="checked" name="limbs" type="radio"/>4</label>
+					<input checked="checked" class="form" name="limbs" type="radio"/>4</label>
 				<label>
-					<input name="limbs" type="radio"/>3</label>
+					<input class="form" name="limbs" type="radio"/>3</label>
 				<label>
-					<input name="limbs" type="radio"/>2</label>
+					<input class="form" name="limbs" type="radio"/>2</label>
 				<label>
-					<input name="limbs" type="radio"/>1</label><br/>
-				<label>Сверхспособности:<select multiple="multiple" name="[бессмертие, неосязаемость, левитация]">
+					<input class="form" name="limbs" type="radio"/>1</label><br/>
+				<label>Сверхспособности:<select class="form" multiple name="[бессмертие, неосязаемость, левитация]">
 					<option>бессмертие</option>
 					<option>прохождение сквозь стены</option>
 					<option>левитация</option>
-				</select>
-				</label><br>
+				</select></label>
+				<br>
 				
 				<label>Биография:
-					<textarea name="bio" placeholder="Расскажите о себе"></textarea>
+					<textarea class="form" name="bio" placeholder="Расскажите о себе"></textarea>
 				</label><br>
 				
 				<label>С контрактом ознакомлен(а)
-					<input name="contract" type="checkbox">
+					<input class="form" name="contract" type="checkbox">
 				</label> <br>
 				
-				<input name="Отправить" type="submit">
+				<input class="form" name="Отправить" type="submit">
 			</form>
 		</div>
 	</div>
 </div>
 <footer id="footer">
-	(с)Олефиренко Захар 2022
+	<span class="footer_name">(с)Олефиренко Захар 2022</span>
 </footer>
 </body>
 </html>
