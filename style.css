@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: "Arial", "Times New Roman", "Felix Titling", sans-serif;
@@ -20,7 +24,6 @@ body {
     display: inline-block;
     vertical-align: middle;
 }
-
 
 
 .list {
@@ -126,18 +129,18 @@ li {
 }
 
 input[type=submit] {
-    padding:5px 15px;
-    background:#ccc;
-    border:0 none;
+    padding: 5px 15px;
+    background: #ccc;
+    border: 0 none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-select, textarea{
+select, textarea {
     vertical-align: middle;
 }
 
-label{
+label {
     color: #37378d;
 }
 
