@@ -1,3 +1,22 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+@media screen and (max-width: 600px) {
+    body{
+        background-color: #00ee8c;
+    }
+    test{
+        display: flex;
+        flex-direction: column;
+    }
+    #main{
+        max-width: 100%;
+        font-size: 12px;
+    }
+}
+
 body {
     margin: 0;
     font-family: "Arial", "Times New Roman", "Felix Titling", sans-serif;
@@ -22,7 +41,6 @@ body {
 }
 
 
-
 .list {
     padding: 5px;
     margin: 25px;
@@ -38,9 +56,8 @@ body {
 }
 
 .list:hover {
-    transition-duration: 150ms;
-    font-size: 25px;
-    text-decoration-color: #efefef;
+    transition-duration: 250ms;
+    background-color: #1d1150;
 }
 
 .nav a {
@@ -60,7 +77,7 @@ a {
 }
 
 .hyperlinks a:hover {
-    text-decoration: underline;
+    color: #341c0a;
 }
 
 .nav_links li {
@@ -112,7 +129,6 @@ li {
     background-color: #F7F7F7;
 }
 
-
 .form {
     margin: 10px;
     padding: 15px;
@@ -126,18 +142,18 @@ li {
 }
 
 input[type=submit] {
-    padding:5px 15px;
-    background:#ccc;
-    border:0 none;
+    padding: 5px 15px;
+    background: #ccc;
+    border: 0 none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-select, textarea{
+select, textarea {
     vertical-align: middle;
 }
 
-label{
+label {
     color: #37378d;
 }
 
