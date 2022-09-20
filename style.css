@@ -75,7 +75,6 @@ li {
 
 .test {
     text-align: center;
-    vertical-align: middle;
 }
 
 #main {
@@ -118,7 +117,7 @@ li {
     border-radius: 2px;
 }
 
-.form:focus {
+#form:focus {
     background-color: azure;
     box-shadow: 0 0 5px blue;
 }
