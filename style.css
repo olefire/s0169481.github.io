@@ -1,0 +1,157 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Arial", "Times New Roman", "Felix Titling", sans-serif;
+    font-size: 17px;
+    background-color: #4bfff7;
+}
+
+#logo img {
+    vertical-align: middle;
+}
+
+#logo {
+    background-color: black;
+}
+
+#site_name {
+    font-family: "Baskerville Old Face";
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.list {
+    padding: 5px;
+    margin: 25px;
+    border: 2px black;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: black;
+}
+
+.nav_list {
+    color: white;
+    font-weight: bold;
+}
+
+.list:hover {
+    transition-duration: 250ms;
+    background-color: #1d1150;
+}
+
+.nav a {
+    color: #5b4e44;
+    padding: 30px;
+}
+
+
+a {
+    text-decoration: none;
+    color: dimgrey;
+}
+
+.task_nav li {
+    margin: 10px;
+    display: inline-block;
+}
+
+.hyperlinks a:hover {
+    color: #5b3717;
+}
+
+.nav_links li {
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+}
+
+.test {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#main {
+    display: inline-block;
+    max-width: 960px;
+}
+
+#spreadsheet {
+    background-color: blanchedalmond;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+}
+
+.table th {
+    font-weight: bold;
+    padding: 5px;
+    background: #efefef;
+    border: 1px solid #dddddd;
+}
+
+.table td {
+    border: 1px solid #dddddd;
+    padding: 5px;
+}
+
+.odd {
+    background-color: #fff;
+}
+
+.even {
+    background-color: #F7F7F7;
+}
+
+
+.form {
+    margin: 10px;
+    padding: 15px;
+    border: 2px #efeaea;
+    border-radius: 2px;
+}
+
+.form:focus {
+    background-color: azure;
+    box-shadow: 0 0 5px blue;
+}
+
+input[type=submit] {
+    padding: 5px 15px;
+    background: #ccc;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+select, textarea {
+    vertical-align: middle;
+}
+
+label {
+    color: #37378d;
+}
+
+#footer {
+    height: 30px;
+    background-color: #110f14;
+    color: white;
+    position: relative;
+}
+
+.footer_name {
+    font-size: 20px;
+    position: absolute;
+    top: 10%
+}
