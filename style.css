@@ -27,9 +27,9 @@ body {
     display: inline;
 }
 
+
 ul, ol{
     padding-inline-start: 0;
-    float: left;
 }
 
 
