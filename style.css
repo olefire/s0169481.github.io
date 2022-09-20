@@ -61,7 +61,7 @@ a {
     display: inline-block;
 }
 
-.hyperlinks a:hover {
+#hyperlinks a:hover {
     color: #5b3717;
 }
 
@@ -81,10 +81,6 @@ li {
 #main {
     display: inline-block;
     max-width: 960px;
-}
-
-#spreadsheet {
-    background-color: blanchedalmond;
 }
 
 .table {
@@ -115,7 +111,7 @@ li {
 }
 
 
-.form {
+#form {
     margin: 10px;
     padding: 15px;
     border: 2px #efeaea;
