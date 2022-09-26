@@ -203,7 +203,15 @@ label {
         text-align: center;
     }
 
+    #form {
+        order: 3;
+    }
 
+    #spreadsheet {
+        order: 2;
+    }
+
+    
     #logo {
         max-width: 960px;
         margin: 0 auto;
