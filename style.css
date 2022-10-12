@@ -10,6 +10,14 @@ body {
     background-color: #4bfff7;
 }
 
+.odd {
+    background-color: #fff;
+}
+
+.even {
+    background-color: #F7F7F7;
+}
+
 header {
     width: 100%;
     background-color: black;
